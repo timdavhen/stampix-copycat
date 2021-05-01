@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Cote-BoldSolid';
+  src: url("../fonts/Cote-BoldSolid.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Cote-LightSolid';
+  src: url("../fonts/Cote-LightSolid.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'GillSansNova-Book';
+  src: url("../fonts/GillSansNova-Book.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'GillSansNova-Light';
+  src: url("../fonts/GillSansNova-Light.ttf") format("truetype"); }
+
+.banner-container {
+  height: 100vh;
+  background: url(../images/stampix-background.jpg);
+  background-size: cover;
+  background-position: top; }
+  .banner-container h1, .banner-container h2, .banner-container h3, .banner-container p {
+    color: white;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7); }
+  .banner-container .navbar-container {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; }
+    .banner-container .navbar-container img {
+      height: 75px; }
+    .banner-container .navbar-container .languages-tab {
+      display: flex;
+      align-items: center; }
+      .banner-container .navbar-container .languages-tab p, .banner-container .navbar-container .languages-tab a {
+        font-family: 'Cote-BoldSolid';
+        font-size: 12px;
+        margin-bottom: 0;
+        text-decoration: none; }
+      .banner-container .navbar-container .languages-tab .fr {
+        margin: 0 15px; }
+  .banner-container .homepage-title {
+    margin: 0 auto;
+    width: 90%;
+    text-align: left; }
+    .banner-container .homepage-title h1 {
+      font-size: 40px;
+      font-family: 'Cote-BoldSolid'; }
+    .banner-container .homepage-title h2 {
+      font-family: 'GillSansNova-Book';
+      font-size: 24px; }
+  .banner-container .product-container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; }
+    .banner-container .product-container p {
+      font-family: 'GillSansNova-Light';
+      letter-spacing: 0.06rem;
+      margin: 0;
+      font-size: 18px; }
+    .banner-container .product-container h3 {
+      margin: 0;
+      width: 350px;
+      font-family: 'Cote-LightSolid';
+      font-size: 14px;
+      line-height: 1.8; }
+    .banner-container .product-container .consumers-card, .banner-container .product-container .business-card {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 425px;
+      height: 400px;
+      box-shadow: 0 0 5px 2px white;
+      background-color: #0F0326;
+      opacity: 0.9; }
+
+.svg-wrapper {
+  margin-top: 0;
+  position: relative;
+  width: 250px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: 5px;
+  margin-right: 5px; }
+  .svg-wrapper #shape {
+    stroke-width: 6px;
+    fill: transparent;
+    stroke: #1F51FF;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220;
+    transition: 1s all ease; }
+  .svg-wrapper #text {
+    font-family: 'GillSansNova-Book';
+    text-transform: uppercase;
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.7);
+    margin-top: -35px;
+    text-align: center; }
+    .svg-wrapper #text .spot {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0; }
+  .svg-wrapper #text a {
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 1.1em; }
+
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #03c4a1; }
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .banner-container {
+    height: 100%;
+    background: url(../images/smartphone-background.jpg); }
+  .navbar-container img {
+    height: 50px !important; }
+  .navbar-container .languages-tab p {
+    font-size: 8px !important; }
+  .homepage-title h1 {
+    font-size: 32px !important; }
+  .homepage-title h2 {
+    font-size: 16px !important; }
+  .product-container {
+    flex-direction: column;
+    width: 300px !important; }
+    .product-container p {
+      font-size: 14px !important; }
+    .product-container h3 {
+      font-size: 10px !important;
+      width: 250px !important; }
+    .product-container .fas, .product-container .far {
+      font-size: 48px !important; }
+    .product-container .consumers-card, .product-container .business-card {
+      width: 300px !important;
+      height: 275px !important;
+      margin-bottom: 50px; } }
